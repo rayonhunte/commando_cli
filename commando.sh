@@ -3,18 +3,9 @@
 echo $'\e[1;33m' Welcome to Commando !!!$'\e[0m'
 echo $'\e[1;33m' Please Chose from below menu Options $'\e[0m'
 
-#store application path
-ogPath=$(pwd)
-#check of bash profile
-isBashrc=$(cd ~; ls -la | grep '.bash_profile' -c)
-#1 if file exist 0 if file does not exist
-echo $isBashrc
-if [ $isBashrc -ne 1 ]
-then
-    touch ~/.bash_profile
-fi
-#switch bash to application path
-cd $ogPath
+# run prep script
+./preCommando.sh
+
 
 #script functions
 # install npm function
