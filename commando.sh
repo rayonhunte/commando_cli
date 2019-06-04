@@ -15,7 +15,7 @@ function npmInint(){
 
 # start application
 function startApp(){
-    node server.js
+    node server/server.js
 }
 
 # command options list
@@ -38,6 +38,7 @@ do
         ;;
         2)
         echo $option
+        startApp
         ;;
         3)
         echo $option
