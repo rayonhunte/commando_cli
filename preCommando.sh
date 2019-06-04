@@ -1,6 +1,6 @@
+#!/bin/bash
+
 #command  prep file
-
-
 #store application path
 ogPath=$(pwd)
 #check of bash profile
