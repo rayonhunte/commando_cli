@@ -1,23 +1,19 @@
 #!/bin/bash
-
 echo $'\e[1;33m' Welcome to Commando !!!$'\e[0m'
 echo $'\e[1;33m' Please Chose from below menu Options $'\e[0m'
 
 # run prep script
 ./preCommando.sh
-
-
 #script functions
 # install npm function
 function npmInint(){
-    npm install
+    npm install >> commando_log 2>&1
 }
 
 # start application
 function startApp(){
-    node server/server.js
+    node server/server.js >> 
 }
-
 # command options list
 commands="
 Install-npm-packages 
@@ -28,7 +24,6 @@ Download-Updates
 Show-status
 Genrate-Report
 "
-
 select option in $commands; 
 do
     case $REPLY in 1)

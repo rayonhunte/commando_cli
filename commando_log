@@ -1,0 +1,33 @@
+npm WARN saveError ENOENT: no such file or directory, open '/Users/rayonhunte/Documents/GitHub/commando_cli/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/Users/rayonhunte/Documents/GitHub/commando_cli/package.json'
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+npm WARN commando_cli No description
+npm WARN commando_cli No repository field.
+npm WARN commando_cli No README data
+npm WARN commando_cli No license field.
+
+audited 30 packages in 1.841s
+found 0 vulnerabilities
+
+npm WARN saveError ENOENT: no such file or directory, open '/Users/rayonhunte/Documents/GitHub/commando_cli/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/Users/rayonhunte/Documents/GitHub/commando_cli/package.json'
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+npm WARN commando_cli No description
+npm WARN commando_cli No repository field.
+npm WARN commando_cli No README data
+npm WARN commando_cli No license field.
+
+audited 30 packages in 1.559s
+found 0 vulnerabilities
+
+npm WARN saveError ENOENT: no such file or directory, open '/Users/rayonhunte/Documents/GitHub/commando_cli/package.json'
+npm WARN enoent ENOENT: no such file or directory, open '/Users/rayonhunte/Documents/GitHub/commando_cli/package.json'
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+npm WARN commando_cli No description
+npm WARN commando_cli No repository field.
+npm WARN commando_cli No README data
+npm WARN commando_cli No license field.
+
+audited 30 packages in 1.378s
+found 0 vulnerabilities
+
