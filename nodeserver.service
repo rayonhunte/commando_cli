@@ -1,0 +1,9 @@
+[Unit]
+Description=Node.js Express server
+
+[Service]
+ExecStart="/user/local/bin/node" /Users/rayonhunte/Documents/GitHub/commando_cli/server/server.js
+
+Restart=always
+
+RestartSec=10
