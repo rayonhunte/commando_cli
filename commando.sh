@@ -7,12 +7,12 @@ echo $'\e[1;33m' Please Chose from below menu Options $'\e[0m'
 #script functions
 # install npm function
 function npmInint(){
-    npm install >> commando_log 2>&1
+    npm install; cd cashout; npm install; cd .. >> commando_log 2>&1
 }
 
 # start application
 function startApp(){
-    node server/server.js >> 
+    # node server/server.js >> 
 }
 # command options list
 commands="
