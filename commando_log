@@ -70,3 +70,17 @@ npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@
 audited 42610 packages in 17.366s
 found 0 vulnerabilities
 
+################# start action ##################
+Tue 18 Jun 2019 12:43:47 PM UTC
+npm install / command option 1
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+audited 141 packages in 6.385s
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 42610 packages in 15.052s
+found 0 vulnerabilities
+
