@@ -31,3 +31,42 @@ npm WARN commando_cli No license field.
 audited 30 packages in 1.378s
 found 0 vulnerabilities
 
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+audited 141 packages in 2.772s
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 42610 packages in 21.845s
+found 0 vulnerabilities
+
+################# start action ##################
+date
+npm install / command option 1
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+audited 141 packages in 1.823s
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 42610 packages in 15.972s
+found 0 vulnerabilities
+
+################# start action ##################
+Tue 18 Jun 2019 03:51:17 AM UTC
+npm install / command option 1
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+audited 141 packages in 2.561s
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 42610 packages in 17.366s
+found 0 vulnerabilities
+
