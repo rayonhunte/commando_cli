@@ -1,0 +1,29 @@
+{
+  "name": "commando_cli",
+  "version": "1.0.0",
+  "description": "cli andular2 manage app",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ts-node": "^8.1.0",
+    "tsconfig-paths": "^3.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayonhunte/commando_cli.git"
+  },
+  "keywords": [
+    "cli",
+    "angular"
+  ],
+  "author": "Rayon Hunte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayonhunte/commando_cli/issues"
+  },
+  "homepage": "https://github.com/rayonhunte/commando_cli#readme"
+}
