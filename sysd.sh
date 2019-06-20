@@ -13,14 +13,14 @@ echo $isSystemd
 
 if [ $isSystemd -ne 1 ]
 then 
-    touch /etc/systemd/user/nodeserver.service
-    echo "[Unit]" >> $systemPath
-    echo "Description=Node.js Express server" >> $systemPath
-    echo " " >> $systemPath
-    echo "[Service]" >> $systemPath
-    echo "ExecStart=/user/local/bin/node $ogPath/server/server.js" >> $systemPath
-    echo " " >> $systemPath
-    echo "Restart=always" >> $systemPath
-    echo "RestartSec=10" >> $systemPath
+    sudo touch /etc/systemd/user/nodeserver.service; sudo chmod u+wx /etc/systemd/user/nodeserver.service; 
+    sudo su -c 'echo "[Unit]" >> $systemPath'
+    echo "Description=Node.js Express server" | sudo tree -a $systemPath
+    echo " " | sudo tree -a $systemPath
+    echo "[Service]" | sudo tree -a $systemPath
+    echo "ExecStart=/user/local/bin/node $ogPath/server/server.js" | sudo tree -a $systemPath
+    echo " " | sudo tree  -a $systemPath
+    echo "Restart=always" | sudo tree -a $systemPath
+    echo "RestartSec=10" | sudo tree -a $systemPath
 fi
 

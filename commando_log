@@ -84,3 +84,37 @@ npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@
 audited 42610 packages in 15.052s
 found 0 vulnerabilities
 
+################# start action ##################
+Thu 20 Jun 2019 06:39:35 AM EST
+npm install / command option 1
+./commando.sh: line 13: npm: command not found
+./commando.sh: line 13: npm: command not found
+################# start action ##################
+Thu 20 Jun 2019 06:42:25 AM EST
+npm install / command option 1
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+added 50 packages from 37 contributors and audited 141 packages in 3.844s
+found 0 vulnerabilities
+
+
+> node-sass@4.12.0 install /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.12.0/linux-x64-64_binding.node
+Download complete
+Binary saved to /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass/vendor/linux-x64-64/binding.node
+Caching binary to /home/rhunte/.npm/node-sass/4.12.0/linux-x64-64_binding.node
+
+> node-sass@4.12.0 postinstall /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass/vendor/linux-x64-64/binding.node
+Testing binary
+Binary is fine
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1084 packages from 1026 contributors and audited 42610 packages in 211.439s
+found 0 vulnerabilities
+
