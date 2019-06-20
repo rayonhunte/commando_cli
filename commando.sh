@@ -15,12 +15,9 @@ function npmInint(){
 
 # start application
 function startApp(){
-    # node server/server.js >>
-   echo "place holder" 
-  #check of system d file
-  #create if does not exist
-  # run start system d service file 
+   echo $(./sysd.sh)	
 }
+
 # command options list
 commands="
 Install-npm-packages 

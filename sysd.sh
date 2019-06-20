@@ -4,11 +4,12 @@
 ogPath=$(pwd)
 
 # check for system d file
-isSystemd=$(ls /etc/systemd/system | grep 'nodeserver' -c)
+isSystemd=$(ls /etc/systemd/user | grep 'nodeserver' -c)
 
 #system path
 systemPath=/etc/systemd/user/nodeserver.service
 
+echo $isSystemd
 
 if [ $isSystemd -ne 1 ]
 then 
@@ -17,7 +18,7 @@ then
     echo "Description=Node.js Express server" >> $systemPath
     echo " " >> $systemPath
     echo "[Service]" >> $systemPath
-    echo "ExecStart='/user/local/bin/node' $ogPath/server/server.js" >> $systemPath
+    echo "ExecStart=/user/local/bin/node $ogPath/server/server.js" >> $systemPath
     echo " " >> $systemPath
     echo "Restart=always" >> $systemPath
     echo "RestartSec=10" >> $systemPath
