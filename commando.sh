@@ -21,9 +21,9 @@ function startApp(){
 # command options list
 commands="
 Install-npm-packages 
-Start-CashOut 
-Stop-Cashout
-Restart-Cashout
+Start-App 
+Stop-App
+Restart-App
 Download-Updates
 Show-status
 Genrate-Report
@@ -33,17 +33,24 @@ do
     case $REPLY in 1)
         #print chosen option
         echo $option
-        npmInint
+        echo "Install Started"
+	npmInint
+	echo "Install Completed"
         ;;
         2)
         echo $option
         startApp
+	echo "App Started"
         ;;
         3)
         echo $option
+	sudo systemctl stop nodeserver
+	echo "App Stoped"
         ;;
         4)
         echo $option
+	sudo systemctl restart nodeserver
+	echo "App restarted"
         ;;
         5)
         echo $option

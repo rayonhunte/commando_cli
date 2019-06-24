@@ -30,7 +30,9 @@ then
     echo "[Install]" >> $nodeFile
     echo "WantedBy=multi-user.target" >> $nodeFile
     sudo systemctl daemon-reload
-    sudo systemctl start  nodeserver
 
 fi
+
+#start app no matter what
+sudo systemctl start nodeserver
 
