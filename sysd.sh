@@ -4,23 +4,33 @@
 ogPath=$(pwd)
 
 # check for system d file
-isSystemd=$(ls /etc/systemd/user | grep 'nodeserver' -c)
+isSystemd=$(ls /lib/systemd/system/ | grep 'nodeserver' -c)
 
-#system path
-systemPath=/etc/systemd/user/nodeserver.service
+#node file
+nodeFile=/lib/systemd/system/nodeserver.service
 
 echo $isSystemd
 
-if [ $isSystemd -ne 1 ]
+if [ $isSystemd  -ne 1 ]
 then 
-    sudo touch /etc/systemd/user/nodeserver.service; sudo chmod u+wx /etc/systemd/user/nodeserver.service; 
-    sudo su -c 'echo "[Unit]" >> $systemPath'
-    echo "Description=Node.js Express server" | sudo tree -a $systemPath
-    echo " " | sudo tree -a $systemPath
-    echo "[Service]" | sudo tree -a $systemPath
-    echo "ExecStart=/user/local/bin/node $ogPath/server/server.js" | sudo tree -a $systemPath
-    echo " " | sudo tree  -a $systemPath
-    echo "Restart=always" | sudo tree -a $systemPath
-    echo "RestartSec=10" | sudo tree -a $systemPath
+    touch $nodeFile
+    echo "[Unit]" > $nodeFile 
+    echo "Description=Node.js Express server" >>  $nodeFile
+    echo "After=network.target" >> $nodeFile
+    echo "" >> $nodeFile
+    echo "[Service]" >> $nodeFile
+    echo "Enviroment=NODE_PORT=3001" >> $nodeFile
+    echo "Type=simple" >> $nodeFile
+    echo "User=root" >> $nodeFile
+    echo "ExecStart=/usr/bin/node $ogPath/server/server.js" >> $nodeFile
+    echo "Restart=on-failure" >> $nodeFile
+    echo "" >> $nodeFile
+    echo "RestartSec=10" >> $nodeFile
+    echo "" >> $nodeFile
+    echo "[Install]" >> $nodeFile
+    echo "WantedBy=multi-user.target" >> $nodeFile
+    sudo systemctl daemon-reload
+    sudo systemctl start  nodeserver
+
 fi
 
