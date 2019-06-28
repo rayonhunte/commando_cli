@@ -57,6 +57,7 @@ do
         ;;
         6)
         echo $option
+	sudo systemctl status nodeserver
         ;;
         7)
         echo $option
