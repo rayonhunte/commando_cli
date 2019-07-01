@@ -1,0 +1,15 @@
+[Unit]
+Description=Node.js Express server
+After=network.target
+
+[Service]
+Enviroment=NODE_PORT=3001
+Type=simple
+User=root
+ExecStart=/usr/bin/node /home/rhunte/GitHub/commando_cli/server/server.js
+Restart=on-failure
+
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

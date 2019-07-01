@@ -156,3 +156,43 @@ npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@
 audited 42610 packages in 22.95s
 found 0 vulnerabilities
 
+################# start action ##################
+Mon 01 Jul 2019 03:23:07 PM EST
+npm install / command option 1
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+added 54 packages from 45 contributors and audited 151 packages in 2.716s
+found 0 vulnerabilities
+
+
+> node-sass@4.12.0 install /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /home/rhunte/.npm/node-sass/4.12.0/linux-x64-64_binding.node
+
+> node-sass@4.12.0 postinstall /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/rhunte/GitHub/commando_cli/cashout/node_modules/node-sass/vendor/linux-x64-64/binding.node
+Testing binary
+Binary is fine
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1084 packages from 1026 contributors and audited 42610 packages in 101.073s
+found 0 vulnerabilities
+
+################# start action ##################
+Mon 01 Jul 2019 03:25:29 PM EST
+npm install / command option 1
+npm WARN ts-node@8.1.0 requires a peer of typescript@>=2.0 but none is installed. You must install peer dependencies yourself.
+
+audited 151 packages in 2.641s
+found 0 vulnerabilities
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 42610 packages in 16.41s
+found 0 vulnerabilities
+
