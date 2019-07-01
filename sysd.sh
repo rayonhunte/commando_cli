@@ -7,7 +7,7 @@ ogPath=$(pwd)
 isSystemd=$(ls /lib/systemd/system/ | grep 'nodeserver' -c)
 
 #node file
-nodeFile=/lib/systemd/system/nodeserver.service
+nodeFile=nodeserver.service
 
 echo $isSystemd
 
@@ -29,10 +29,13 @@ then
     echo "" >> $nodeFile
     echo "[Install]" >> $nodeFile
     echo "WantedBy=multi-user.target" >> $nodeFile
-    sudo systemctl daemon-reload
+    chmod o+x $nodeFile
+    sudo chown root $nodeFile
+    #sudo chgrp root $nodeFile
+    #sudo systemctl daemon-reload
 
 fi
 
 #start app no matter what
-sudo systemctl start nodeserver
+#sudo systemctl start nodeserver
 
