@@ -29,9 +29,9 @@ then
     echo "" >> $nodeFile
     echo "[Install]" >> $nodeFile
     echo "WantedBy=multi-user.target" >> $nodeFile
-    chmod o+x $nodeFile
+    chmod a=rwx $nodeFile
     sudo chown root $nodeFile
-    #sudo chgrp root $nodeFile
+    sudo chgrp root $nodeFile
     #sudo systemctl daemon-reload
 
 fi
