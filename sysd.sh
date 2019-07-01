@@ -4,7 +4,7 @@
 ogPath=$(pwd)
 
 # check for system d file
-isSystemd=$(ls /lib/systemd/system/ | grep 'nodeserver' -c)
+isSystemd=$(ls /etc/systemd/system/ | grep 'nodeserver' -c)
 
 #node file
 nodeFile=nodeserver.service
@@ -29,10 +29,11 @@ then
     echo "" >> $nodeFile
     echo "[Install]" >> $nodeFile
     echo "WantedBy=multi-user.target" >> $nodeFile
-    chmod a=rwx $nodeFile
-    sudo chown root $nodeFile
-    sudo chgrp root $nodeFile
-    #sudo systemctl daemon-reload
+    #sudo chmod a=rwx $nodeFile
+    #sudo chown root $nodeFile
+    #sudo chgrp root $nodeFile
+    sudo mv $nodeFile isSystemd
+    sudo systemctl daemon-reload
 
 fi
 
