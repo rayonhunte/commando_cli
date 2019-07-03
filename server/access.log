@@ -1,1 +1,58 @@
 ::1 - - [01/Jul/2019:16:07:04 +0000] "GET /all HTTP/1.1" 200 4
+::1 - - [02/Jul/2019:19:34:51 +0000] "GET /all HTTP/1.1" 200 139
+::1 - - [02/Jul/2019:19:54:08 +0000] "GET /checkout HTTP/1.1" 404 147
+::1 - - [02/Jul/2019:19:59:36 +0000] "GET /checkout HTTP/1.1" 404 147
+::1 - - [02/Jul/2019:20:00:54 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:20:02:07 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:20:05:26 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:20:05:54 +0000] "POST /checkout HTTP/1.1" 200 2
+[0mPOST /checkout [32m200 [0m385.181 ms - 2[0m
+::1 - - [02/Jul/2019:22:27:33 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:30:31 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:31:29 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:32:25 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:33:18 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:34:53 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:35:29 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:39:08 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:43:55 +0000] "POST /checkout HTTP/1.1" 200 2
+::1 - - [02/Jul/2019:22:47:40 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:22:49:02 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:22:57:39 +0000] "POST /checkout HTTP/1.1" 500 1327 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:00:36 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:05:17 +0000] "POST /checkout HTTP/1.1" 500 1382 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:06:08 +0000] "POST /checkout HTTP/1.1" 500 1382 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:08:18 +0000] "POST /checkout HTTP/1.1" 500 1382 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:08:58 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:12:12 +0000] "POST /checkout HTTP/1.1" 500 1330 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:13:07 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:15:35 +0000] "POST /checkout HTTP/1.1" 500 1382 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:16:16 +0000] "POST /checkout HTTP/1.1" 500 1370 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:16:30 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:19:35 +0000] "POST /checkout HTTP/1.1" 500 1382 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:20:58 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:22:39 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:28:33 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:30:30 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:31:53 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:00 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:01 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:02 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:02 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:03 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:27 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:28 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:34 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [02/Jul/2019:23:32:35 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:33:32 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:33:34 +0000] "POST /checkout HTTP/1.1" 500 1382 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:34:37 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:35:06 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:35:10 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:36:05 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:38:54 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:39:18 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:00:39:23 +0000] "POST /checkout HTTP/1.1" 200 2 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:01:17:21 +0000] "GET /post HTTP/1.1" 404 143 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:01:17:49 +0000] "GET /post HTTP/1.1" 200 157 "-" "PostmanRuntime/7.15.0"
+::1 - - [03/Jul/2019:01:41:20 +0000] "GET /all HTTP/1.1" 200 277 "-" "PostmanRuntime/7.15.0"

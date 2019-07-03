@@ -13,7 +13,9 @@ echo $isSystemd
 
 if [ $isSystemd  -ne 1 ]
 then 
+    # create systemd service file
     sudo touch $nodeFile
+    # write to new file
     sudo sh -c "echo [Unit] > $nodeFile" 
     sudo sh -c "echo Description=Node.js Express server >>  $nodeFile"
     sudo sh -c "echo After=network.target >> $nodeFile"
@@ -29,10 +31,7 @@ then
     sudo sh -c "echo '' >> $nodeFile"
     sudo sh -c "echo [Install] >> $nodeFile"
     sudo sh -c "echo WantedBy=multi-user.target >> $nodeFile"
-    #sudo chmod a=rwx $nodeFile
-    #sudo chown root $nodeFile
-    #sudo chgrp root $nodeFile
-    #sudo mv $nodeFile /etc/systemd/system/
+    # reload systemctl to load new service
     sudo systemctl daemon-reload
 
 fi
