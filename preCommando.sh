@@ -37,7 +37,7 @@ cd $ogPath
 
 # check for log file
 isLog=$(ls | grep 'commando_log' -c)
-echo $isLog
+# echo $isLog
 if [ $isLog -ne 1 ]
 then
     touch commando_log

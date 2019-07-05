@@ -27,6 +27,7 @@ Restart-App
 Download-Updates
 Show-status
 Genrate-Report
+Help
 "
 select option in $commands; 
 do
@@ -54,6 +55,7 @@ do
         ;;
         5)
         echo $option
+        cd cashout; git pull
         ;;
         6)
         echo $option
@@ -61,6 +63,17 @@ do
         ;;
         7)
         echo $option
+        ;;
+        8)
+        echo "Commands"
+        count=1
+        for o in $commands
+          do
+              echo $count")"$o 
+              count=$[$count+1]
+          done
+          echo "Control -C to exit commando"
+          echo "Call Rayon for help with all the things"
         ;;
         *)
         echo "Sorry Invalid Option"
