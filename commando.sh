@@ -63,6 +63,15 @@ do
         ;;
         7)
         echo $option
+        read -p "Please enter log file name " logfile
+           inFile='server/'$logfile
+           echo $inFile
+           if [ -e $inFile ]
+                then
+                ./alltheparse.sh $inFile
+           else
+                echo "No such log file"
+           fi
         ;;
         8)
         echo "Commands"
