@@ -13,6 +13,9 @@ while IFS= read -r line; do
     elif [ $method == '"GET' ]
         then
         get=$[$get + 1]
-        echo $get
     fi
 done < "$1"
+
+printf "Total Number of Request %s\n" $reqTotal
+printf "Total Number of Post Request %s\n" $post
+printf "Total Number of GET Request %s\n" $get

@@ -65,7 +65,6 @@ do
         echo $option
         read -p "Please enter log file name " logfile
            inFile='server/'$logfile
-           echo $inFile
            if [ -e $inFile ]
                 then
                 ./alltheparse.sh $inFile
