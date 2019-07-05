@@ -19,7 +19,11 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+<<<<<<< HEAD
     "bootstrap": "^4.3.1",
+=======
+    "@ng-bootstrap/ng-bootstrap": "4.0.0",
+>>>>>>> ccf0cc5743c75b9d78a5c3c7bcb84373eeb2fbf2
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
