@@ -4,8 +4,8 @@
   "description": "cli andular2 manage app",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "morgan": "^1.9.1",
     "rotating-file-stream": "^1.4.2",
     "ts-node": "^8.1.0",
